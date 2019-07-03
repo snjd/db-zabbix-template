@@ -73,7 +73,7 @@ for item in listparasm:
     elif len(item) == 3:
         value = res[item[0]][item[1]][item[2]]
     else:
-        break
+        continue
     param = ",".join(item)
     line = hostname + "  "+baseitem+"["+param+"]"+" " + str(value)
     f.write(line+"\n")
