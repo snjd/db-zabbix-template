@@ -60,7 +60,7 @@ file="mongostatus.txt"
 f = open(file,'w')
 
 try:
-    mo = MongoClient('47.112.113.7', 27017, connectTimeoutMS=5000)
+    mo = MongoClient('127.0.0.1', 27017, connectTimeoutMS=5000)
 except Exception as e:
     print ('Can\'t connect to '+ '127.0.0.1')
     print ("ERROR:", e)
